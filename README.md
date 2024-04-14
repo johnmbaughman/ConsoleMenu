@@ -76,6 +76,7 @@ You can also define configuration via .Configure() method. The default config lo
     public Action<string> WriteTitleAction = title => Console.WriteLine(title);
     public bool EnableBreadcrumb = false;
     public Action<IReadOnlyList<string>> WriteBreadcrumbAction = titles => Console.WriteLine(string.Join(" > ", titles));
+    public bool EnableAlphabet = false;
   }
 ```
 Example:
