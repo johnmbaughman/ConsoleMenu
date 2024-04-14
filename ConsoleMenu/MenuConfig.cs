@@ -116,6 +116,10 @@ public class MenuConfig
   /// If you have more than 36 menu items, it will switch back to using numbers for item 37 forward.
   /// default: false
   /// </summary>
+  /// <remarks>
+  /// Note that enabling this feature effectively prevents filtering, as the first letter of the
+  /// filtered value is treated as a menu item key.
+  /// </remarks>
   public bool EnableAlphabet = false;
 
   /// <summary>Disables keyboard navigation, forcing the use of the up and down arrows. default: false</summary>
