@@ -61,6 +61,8 @@ You can also define configuration via .Configure() method. The default config lo
     public ConsoleColor SelectedItemForegroundColor = Console.BackgroundColor;
     public ConsoleColor ItemBackgroundColor = Console.BackgroundColor;
     public ConsoleColor ItemForegroundColor = Console.ForegroundColor;
+    public Encoding InputEncoding = Console.InputEncoding;
+    public Encoding OutputEncoding = Console.OutputEncoding;
     public Action WriteHeaderAction = () => Console.WriteLine("Pick an option:");
     public Action<MenuItem> WriteItemAction = item => Console.Write("[{0}] {1}", item.Index, item.Name);
     public string Selector = ">> ";
